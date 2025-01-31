@@ -22,9 +22,7 @@ def hash_password(password):
 # User credentials
 users = [
     ("user1", hash_password("pass1")),
-    ("user2", hash_password("pass2")),
-    ("user3", hash_password("pass3")),
-    ("user4", hash_password("pass4"))
+    ("John Doe", hash_password("JohnDoePassword"))
 ]
 
 cur.executemany("INSERT INTO userdata (username, password) VALUES (?, ?)", users)
