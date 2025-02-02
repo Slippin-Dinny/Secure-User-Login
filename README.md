@@ -6,4 +6,4 @@ Python script which runs a secure server login interface
 * Step 2: Run the server.py file, make any nessecary changes to the host or port of the server if you are interested in hosting the server across the network.
 * Step 3: Finally, run the client.py file, this will connect to the server and will prompt for a username and password, after entering both the server should alert you on whether you were succesful or not.
 
-While the passwords in the database are secure the server does not employ any SSL certificates and therefore is vulnrable to eavesdropping and Man In The Middle (MITM) attacks.
+While the passwords in the database are secure due to hasing via bcrypt, the server does not employ any SSL certificates and therefore is vulnrable to eavesdropping and Man In The Middle (MITM) attacks.
